@@ -66,7 +66,7 @@ def rag_answer(query_text: str):
     # 🔹 Load model open-source (Gemma 3B IT)
     generator = pipeline(
         task="text-generation",
-        model="google/gemma-3-1b-it",
+        model="meta-llama/Llama-3.1-8B-Instruct",
         device=0,  # pakai GPU kalau ada, CPU = -1
         do_sample=True,
         temperature=0.2,
@@ -109,7 +109,7 @@ def rag_answer(query_text: str):
 st.set_page_config(page_title="📖 RAG Demo", page_icon="📚")
 st.title("📖 Kemerdekaan Bot")
 st.write("Chatbot tentang Sejarah Proklamasi Kemerdekaan Indonesia.")
-st.write("Chatbot berbasis RAG ini dibangun menggunakan google/embeddinggemma-300m, gemma-3-1b-it, dan Elasticsearch.")
+st.write("Chatbot berbasis RAG ini dibangun menggunakan google/embeddinggemma-300m, meta-llama/Llama-3.1-8B-Instruct, dan Elasticsearch.")
 
 user_query = st.text_input("Masukkan pertanyaan Anda:")
 
@@ -125,4 +125,5 @@ if st.button("Cari Jawaban") and user_query:
             st.markdown(f"**Chunk {i}:**\n\n{chunk}")
     st.subheader("Sumber Dokumen untuk Chunk")
     for i, src in enumerate(sources, 1):
+
         st.write(f"{i}. {src}")
