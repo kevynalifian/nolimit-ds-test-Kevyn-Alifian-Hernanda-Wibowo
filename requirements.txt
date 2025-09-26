@@ -1,0 +1,12 @@
+streamlit
+transformers
+torch
+langchain
+langchain-community
+langchain-huggingface
+elasticsearch
+pandas
+datasets
+ragas
+pyngrok
+chromadb
