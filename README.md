@@ -5,6 +5,7 @@ Perkenalkan saya Kevyn Alifian Hernanda Wibowo izin memperkenalkan "📖 Kemerde
 
 ### Dasar pemilihan model
 1. google/embeddinggemma-300m
+   
 🔹 Keunggulan:
 - Ringan & Efisien → Model embedding berukuran kecil (300M parameter) sehingga cepat dipakai untuk menghasilkan representasi vektor teks.
 - Kualitas Representasi Baik → Mampu menghasilkan embedding yang cukup bagus untuk semantic search, clustering, dan retrieval, meskipun ukurannya tidak besar.
@@ -12,6 +13,7 @@ Perkenalkan saya Kevyn Alifian Hernanda Wibowo izin memperkenalkan "📖 Kemerde
 - Kompatibel dengan pipeline retrieval → Cocok untuk dipakai bersama Elasticsearch, FAISS, atau vector store lainnya.
 
 3. meta-llama/Llama-3.1-8B-Instruct
+   
 🔹 Keunggulan:
 - Kemampuan Reasoning Lebih Tinggi → LLM ukuran 8B parameter yang cukup besar untuk reasoning, summarization, dan text generation dengan kualitas bagus.
 - Optimasi untuk Instruction Following → Sudah di-fine-tune agar lebih baik dalam menjawab instruksi pengguna (seperti ChatGPT style).
@@ -19,6 +21,7 @@ Perkenalkan saya Kevyn Alifian Hernanda Wibowo izin memperkenalkan "📖 Kemerde
 - Open-source & Fleksibel → Bisa dipakai offline dan dikustomisasi sesuai kebutuhan (fine-tuning, RAG, dsb).
 
 3. Elasticsearch
+   
 🔹 Keunggulan:
 - Mesin Pencari Skala Besar → Bisa menyimpan jutaan dokumen dengan query retrieval yang sangat cepat.
 - Vector Search Support → Sekarang Elasticsearch sudah mendukung dense vector search → bisa dipakai untuk semantic search menggunakan embedding.
