@@ -12,7 +12,7 @@ Perkenalkan saya Kevyn Alifian Hernanda Wibowo izin memperkenalkan "📖 Kemerde
 - Hemat Resource → Bisa jalan di GPU menengah (misalnya T4 di Colab), tidak perlu hardware super besar.
 - Kompatibel dengan pipeline retrieval → Cocok untuk dipakai bersama Elasticsearch, FAISS, atau vector store lainnya.
 
-3. meta-llama/Llama-3.1-8B-Instruct
+2. meta-llama/Llama-3.1-8B-Instruct
    
 🔹 Keunggulan:
 - Kemampuan Reasoning Lebih Tinggi → LLM ukuran 8B parameter yang cukup besar untuk reasoning, summarization, dan text generation dengan kualitas bagus.
