@@ -6,25 +6,25 @@ Perkenalkan saya Kevyn Alifian Hernanda Wibowo izin memperkenalkan "📖 Kemerde
 ### Dasar pemilihan model
 1. google/embeddinggemma-300m
 🔹 Keunggulan:
-Ringan & Efisien → Model embedding berukuran kecil (300M parameter) sehingga cepat dipakai untuk menghasilkan representasi vektor teks.
-Kualitas Representasi Baik → Mampu menghasilkan embedding yang cukup bagus untuk semantic search, clustering, dan retrieval, meskipun ukurannya tidak besar.
-Hemat Resource → Bisa jalan di GPU menengah (misalnya T4 di Colab), tidak perlu hardware super besar.
-Kompatibel dengan pipeline retrieval → Cocok untuk dipakai bersama Elasticsearch, FAISS, atau vector store lainnya.
+- Ringan & Efisien → Model embedding berukuran kecil (300M parameter) sehingga cepat dipakai untuk menghasilkan representasi vektor teks.
+- Kualitas Representasi Baik → Mampu menghasilkan embedding yang cukup bagus untuk semantic search, clustering, dan retrieval, meskipun ukurannya tidak besar.
+- Hemat Resource → Bisa jalan di GPU menengah (misalnya T4 di Colab), tidak perlu hardware super besar.
+- Kompatibel dengan pipeline retrieval → Cocok untuk dipakai bersama Elasticsearch, FAISS, atau vector store lainnya.
 
 3. meta-llama/Llama-3.1-8B-Instruct
 🔹 Keunggulan:
-Kemampuan Reasoning Lebih Tinggi → LLM ukuran 8B parameter yang cukup besar untuk reasoning, summarization, dan text generation dengan kualitas bagus.
-Optimasi untuk Instruction Following → Sudah di-fine-tune agar lebih baik dalam menjawab instruksi pengguna (seperti ChatGPT style).
-Lebih Ringan daripada Model Super Besar → Masih feasible dijalankan di GPU besar (A100 atau Colab Pro+), tidak seberat model 70B.
-Open-source & Fleksibel → Bisa dipakai offline dan dikustomisasi sesuai kebutuhan (fine-tuning, RAG, dsb).
+- Kemampuan Reasoning Lebih Tinggi → LLM ukuran 8B parameter yang cukup besar untuk reasoning, summarization, dan text generation dengan kualitas bagus.
+- Optimasi untuk Instruction Following → Sudah di-fine-tune agar lebih baik dalam menjawab instruksi pengguna (seperti ChatGPT style).
+- Lebih Ringan daripada Model Super Besar → Masih feasible dijalankan di GPU besar (A100 atau Colab Pro+), tidak seberat model 70B.
+- Open-source & Fleksibel → Bisa dipakai offline dan dikustomisasi sesuai kebutuhan (fine-tuning, RAG, dsb).
 
 3. Elasticsearch
 🔹 Keunggulan:
-Mesin Pencari Skala Besar → Bisa menyimpan jutaan dokumen dengan query retrieval yang sangat cepat.
-Vector Search Support → Sekarang Elasticsearch sudah mendukung dense vector search → bisa dipakai untuk semantic search menggunakan embedding.
-Hybrid Search → Bisa menggabungkan keyword-based retrieval (BM25) dan semantic retrieval (dense embeddings) untuk hasil lebih relevan.
-Ekosistem Kuat → Banyak digunakan di industri, mudah diintegrasikan dengan aplikasi produksi.
-Scalability Tinggi → Bisa di-cluster untuk menangani data dalam jumlah besar.
+- Mesin Pencari Skala Besar → Bisa menyimpan jutaan dokumen dengan query retrieval yang sangat cepat.
+- Vector Search Support → Sekarang Elasticsearch sudah mendukung dense vector search → bisa dipakai untuk semantic search menggunakan embedding.
+- Hybrid Search → Bisa menggabungkan keyword-based retrieval (BM25) dan semantic retrieval (dense embeddings) untuk hasil lebih relevan.
+- Ekosistem Kuat → Banyak digunakan di industri, mudah diintegrasikan dengan aplikasi produksi.
+- Scalability Tinggi → Bisa di-cluster untuk menangani data dalam jumlah besar.
 
 ### Dataset
 Dataset yang digunakan berasal dari https://www.ksap.org/sap/wp-content/uploads/2020/07/MAJALAH-MAYA-KSAP-1-AGUSTUS-2020.pdf
