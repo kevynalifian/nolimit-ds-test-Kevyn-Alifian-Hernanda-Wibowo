@@ -43,4 +43,5 @@ Dataset yang digunakan berasal dari https://www.ksap.org/sap/wp-content/uploads/
 3. Jika sudah, 📖 Kemerdekaan Bot akan menampilkan jawaban dari pertanyaannya, konteks chunk, dan asal konteks chunk dari halaman berapa pada data .pdf yang digunakan
 
 ### Flowchart
+<img width="2826" height="2521" alt="Flowchart" src="https://github.com/user-attachments/assets/b0a86990-8f84-472e-83d7-f7491fc39b8e" />
 
